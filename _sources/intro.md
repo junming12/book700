@@ -1,6 +1,6 @@
 # Welcome to My Stata Program Book
 
-Welcome to Mu's Stata program book. This book serves as a guide to a set of Stata programs our group developed as part of the National Health and Nutrition Examination Survey (NHANES) project.
+Welcome to my Stata program book. This book serves as a guide to a set of Stata programs our group developed as part of the National Health and Nutrition Examination Survey (NHANES) project.
 
 ## Introduction
 

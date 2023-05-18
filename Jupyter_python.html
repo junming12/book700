@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Jupyter-Python Version &#8212; Advanced Stata Book</title>
   
@@ -44,7 +44,6 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -67,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Stata-dyndoc Version" href="Stata_dyndoc.html" />
     <link rel="prev" title="Welcome to My Stata Program Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -365,9 +364,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="jupyter-python-version">
-<h1>Jupyter-Python Version<a class="headerlink" href="#jupyter-python-version" title="Permalink to this heading">#</a></h1>
+<h1>Jupyter-Python Version<a class="headerlink" href="#jupyter-python-version" title="Permalink to this headline">#</a></h1>
 <section id="increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program">
-<h2>Increasing access to the NHANES 1988-2018 surveys &amp; mortality linkage data via a user-friendly Stata program<a class="headerlink" href="#increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program" title="Permalink to this heading">#</a></h2>
+<h2>Increasing access to the NHANES 1988-2018 surveys &amp; mortality linkage data via a user-friendly Stata program<a class="headerlink" href="#increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program" title="Permalink to this headline">#</a></h2>
 <p><em>Mu Jin, Johns Hopkins Bloomberg School of Public Health</em><br />
 <em>Junming Gong, Johns Hopkins Bloomberg School of Public Health</em><br />
 <em>Xueer Zhang, Johns Hopkins Bloomberg School of Public Health</em><br />
@@ -392,11 +391,11 @@ nhanes
 <p><u>obs</u>: 19599<br />
 <u>vars</u>: 22</p>
 <p>Here is our survival analysis program and an example:</p>
-<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> nh3andmort,<span class="k"> clear</span>  
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> nh3andmort,<span class="k"> clear</span>  <span class="k"></span>
 <span class="k">stset</span> permth_exm, failure(mortstat) 
 </pre></div>
 </div>
-<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">capture program drop</span> survival_analysis
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">capture program drop</span> survival_analysis<span class="k"></span>
 <span class="k">program</span> define survival_analysis
 <span class="k">  args</span> varname
 <span class="k">  </span>
@@ -415,7 +414,7 @@ survival_analysis hab1
 </div>
 <p><img alt="" src="_images/Graph1.svg" /></p>
 <p>Cox proportional hazards model for hab1:</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>Haz. ratio</p></th>
@@ -436,7 +435,7 @@ survival_analysis hab1
 </tbody>
 </table>
 <p>Proportional hazards assumption test for hab1:</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p>chi2</p></th>
